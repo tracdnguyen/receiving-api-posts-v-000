@@ -6760,3 +6760,21 @@ Cannot render console from 76.183.233.132! Allowed networks: 127.0.0.1, ::1, 127
 
 Started GET "/assets/turbolinks.self-569ee74eaa15c1e2019317ff770b8769b1ec033a0f572a485f64c82ddc8f989e.js?body=1" for 76.183.233.132 at 2018-11-25 20:18:34 +0000
 Cannot render console from 76.183.233.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+
+
+Started GET "/posts/new" for 76.183.233.132 at 2018-11-25 20:27:28 +0000
+Cannot render console from 76.183.233.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 31ms (Views: 30.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 76.183.233.132 at 2018-11-25 20:27:36 +0000
+Cannot render console from 76.183.233.132! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by PostsController#create as */*
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"S/x2LhiysbHbEqSyDO/K7dGoeXo+YVCvZYJkbYFIijaOTsQt5UTDCxfJe+1jFppn1uNTYHSvjXjnq58VzesjRQ==", "post"=>{"title"=>"New Title", "description"=>"New Descipt"}}
+  [1m[35m (0.5ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "posts" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "New Title"], ["description", "New Descipt"], ["created_at", "2018-11-25 20:27:36.816875"], ["updated_at", "2018-11-25 20:27:36.816875"]]
+  [1m[35m (1.9ms)[0m  commit transaction
+Redirected to http://159.89.235.135:44616/posts/15
+Completed 200 OK in 17ms (ActiveRecord: 2.7ms)
